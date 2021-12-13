@@ -53,23 +53,6 @@ body{
     display: flex;
     flex-direction: column;
 }
-.formulario__caba{
-    display: flex;
-    flex-direction: column;
-    border:5px solid brown;
-    padding: 20px;
-    margin: 10px;
-    background-color: gainsboro;
-}
-.formulario__caba input{
-    width: 28px; 
-    height: 28px;
-}
-.formulario__caba select{
-    height:40px;
-    width:200px;
-    font-size: 130%;
-}
 .formulario__botones{
     width: 2em;
 }
@@ -78,22 +61,14 @@ body{
     background-color: cornflowerblue;
     color: white;
 }
-.info{
-    border:15px dashed #007209;
-    padding: 20px;
-    background-color: wheat;
-}
-.info p{
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 .info__imag{
     margin-left: auto; 
     margin-right: auto;
     display: block;
 }
 .tamanoImagenes{
-    width: 100%; 
+    width: 980px;
+    height: 680px; 
 }
 .bordeReglas{
     border:double 10px black;
@@ -114,7 +89,7 @@ body{
 
 @media all and (min-width: 1080px){
     body{
-        font-size: 120%;
+        font-size: 130%;
     }
     .main > header {
         margin-left: 100px;
@@ -139,6 +114,10 @@ body{
     }
     .tamanoImagenes{
         width: 33%;
+    }
+    .carruselTamano{
+        margin-left: 15em;
+        margin-right: 15em;
     }
 }
   
