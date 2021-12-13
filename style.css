@@ -35,12 +35,11 @@ body{
     grid-area: main;
     margin-bottom: 10px;
     margin-top: 10px;
+    padding: 1em;
   }
   
 .main > footer {
-    grid-area: foot;
-    height: 70px;
-    background-color: #8cffa0;
+    margin-top: 1em;
   }
 
 .header__logo{
@@ -50,20 +49,9 @@ body{
     background-color: green;
     transform: scale(1.45,1.45);
 }
-.formulario__datos{
+.formulario--datos{
     display: flex;
     flex-direction: column;
-    border:5px solid green;
-    padding: 20px;
-    margin-bottom: 10px;
-    background-color: wheat;
-}
-.formulario__datos div{
-    margin-bottom: 20px;
-}
-.formulario__datos legend{
-    padding-top: 10px;
-    font-weight: bold
 }
 .formulario__caba{
     display: flex;
@@ -72,9 +60,6 @@ body{
     padding: 20px;
     margin: 10px;
     background-color: gainsboro;
-}
-.formulario__caba div{
-    padding-bottom: 18px;
 }
 .formulario__caba input{
     width: 28px; 
@@ -86,9 +71,7 @@ body{
     font-size: 130%;
 }
 .formulario__botones{
-    display: flex;
-    flex-direction: column;
-    width: 400px;
+    width: 2em;
 }
 .formulario__botones button{
     padding: 20px;
@@ -127,25 +110,7 @@ body{
     text-align: center;
     font-size: 100%
 }
-.anima{
-    justify-self: auto;
-    font-size: 200%;
-    color: greenyellow;
-    animation-name: moviendoM;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-@keyframes moviendoM{
-    0%{transform: translateX(0);}
-    50%{transform: translateX(35%);}
-    100%{transform: translateX(0);}
-}
-@keyframes moviendoD{
-    0%{transform: translateX(0);}
-    50%{transform: translateX(70%);}
-    100%{transform: translateX(0);}
-}
+
 
 @media all and (min-width: 1080px){
     body{
@@ -160,50 +125,20 @@ body{
         margin-right: 5em;
     }
     .formulario{
-        margin-left: 5em;
-        margin-right: 5em;
+        margin-left: 8em;
+        margin-right: 8em;
         padding: 1em 3em;
     }
     .main > footer{
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 5em;
+        margin-right: 5em;
     }
-    .formulario__datos{
-        flex-direction: row;
-    }
-    .formulario__datos div{
-        margin-right: 30px;
-    }
-    .formulario__caba{
-        display: flex;
+    .formulario--datos{
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .formulario__caba div{
-        padding-right: 30px;
-    }
-    .horizontal{
-        display: flex;
-        flex-direction: row;
-        padding-right: 15px;
-    }
-    .formulario__botones{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
-    }
     .tamanoImagenes{
         width: 33%;
-    }
-    .titulo{
-        text-align: center;
-        font-size: 250%
-    }
-    .row{
-        display: flex;
-        padding: 5px;;
-        justify-content: space-between;
     }
 }
   
