@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700&family=Mulish:ital,wght@1,300&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)), url("img/fondoH.jpg");
+    background-size: cover;
+    font-family: 'Mulish', sans-serif;
+    font-size: 150%;
+}
+.main {
+    margin: 20px;
+    display: grid;
+    width: 98%;
+    height: 98%;
+    grid-template-areas: "head"
+                         "nav"
+                         "main"
+                         "foot";
+  }
+.main > header{
+    grid-area: head;
+    margin-bottom: 10px;
+}  
+.main > nav {
+    display: flex;
+    grid-area: nav;
+    padding: 15px;
+  }
+  
+.formulario {
+    grid-area: main;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+.main > footer {
+    grid-area: foot;
+    height: 70px;
+    background-color: #8cffa0;
+  }
+
+.header__logo{
+    width: 200px;
+}
+.menu ul li a:hover{
+    background-color: green;
+    transform: scale(1.45,1.45);
+}
+.formulario__datos{
+    display: flex;
+    flex-direction: column;
+    border:5px solid green;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: wheat;
+}
+.formulario__datos div{
+    margin-bottom: 20px;
+}
+.formulario__datos legend{
+    padding-top: 10px;
+    font-weight: bold
+}
+.formulario__caba{
+    display: flex;
+    flex-direction: column;
+    border:5px solid brown;
+    padding: 20px;
+    margin: 10px;
+    background-color: gainsboro;
+}
+.formulario__caba div{
+    padding-bottom: 18px;
+}
+.formulario__caba input{
+    width: 28px; 
+    height: 28px;
+}
+.formulario__caba select{
+    height:40px;
+    width:200px;
+    font-size: 130%;
+}
+.formulario__botones{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.formulario__botones button{
+    padding: 20px;
+    background-color: cornflowerblue;
+    color: white;
+}
+.info{
+    border:15px dashed #007209;
+    padding: 20px;
+    background-color: wheat;
+}
+.info p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.info__imag{
+    margin-left: auto; 
+    margin-right: auto;
+    display: block;
+}
+.tamanoImagenes{
+    width: 100%; 
+}
+.bordeReglas{
+    border:double 10px black;
+    background-color: white;
+}
+.reglas{
+    padding-left: 30px;
+}
+.reglas__separacion{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.titulo{
+    text-align: center;
+    font-size: 100%
+}
+.anima{
+    justify-self: auto;
+    font-size: 200%;
+    color: greenyellow;
+    animation-name: moviendoM;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes moviendoM{
+    0%{transform: translateX(0);}
+    50%{transform: translateX(35%);}
+    100%{transform: translateX(0);}
+}
+@keyframes moviendoD{
+    0%{transform: translateX(0);}
+    50%{transform: translateX(70%);}
+    100%{transform: translateX(0);}
+}
+
+@media all and (min-width: 1080px){
+    body{
+        font-size: 120%;
+    }
+    .main > header {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .main > nav {
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+    .formulario{
+        margin-left: 5em;
+        margin-right: 5em;
+        padding: 1em 3em;
+    }
+    .main > footer{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .formulario__datos{
+        flex-direction: row;
+    }
+    .formulario__datos div{
+        margin-right: 30px;
+    }
+    .formulario__caba{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .formulario__caba div{
+        padding-right: 30px;
+    }
+    .horizontal{
+        display: flex;
+        flex-direction: row;
+        padding-right: 15px;
+    }
+    .formulario__botones{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    .tamanoImagenes{
+        width: 33%;
+    }
+    .titulo{
+        text-align: center;
+        font-size: 250%
+    }
+    .row{
+        display: flex;
+        padding: 5px;;
+        justify-content: space-between;
+    }
+}
+  
