@@ -70,10 +70,6 @@ body{
     width: 980px;
     height: 680px; 
 }
-.bordeReglas{
-    border:double 10px black;
-    background-color: white;
-}
 .reglas{
     padding-left: 30px;
 }
