@@ -25,7 +25,6 @@ body {
 }
 .main nav {
   display: flex;
-  grid-area: nav;
   padding: 15px;
 }
 .main nav li:hover {
