@@ -1,146 +1,95 @@
-perator": "GreaterThan",
-                                "rightOperand": "5.0.0"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ],
-        "pkgName": "com.ea.gp.nbamobile"
-    },
-    {
-        "RuleSets": [
-            {
-                "description": "com.foxnextgames.avatar_aga_gl",
-                "messageWindow": {
-                    "buttons": [
-                        {
-                            "actions": [
-                                {
-                                    "actionDictionary": {
-                                        "actionValue": "AGA_GL"
-                                    },
-                                    "actionType": "GlMode"
-                                }
-                            ],
-                            "buttonColor": "Blue",
-                            "buttonStringKey": "Swtich_&_Restart_Button"
-                        },
-                        {
-                            "actions": [
-                                {
-                                    "actionDictionary": {
-                                    },
-                                    "actionType": "ContinueAnyway"
-                                }
-                            ],
-                            "buttonColor": "White",
-                            "buttonStringKey": "Not_Now_Button"
-                        }
-                    ],
-                    "dontShowOption": true,
-                    "headerStringKey": "AGA_GL_New_Header",
-                    "messageStringKey": "Graphic_Issue_AGA_GL_New_Message",
-                    "messageType": "Info"
-                },
-                "ruleId": "k7d9rgtn",
-                "rules": [
-                    {
-                        "expressions": [
-                            {
-                                "contextJson": "",
-                                "leftOperand": "Oem",
-                                "operator": "In",
-                                "rightOperand": "bgp"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "GlMode",
-                                "operator": "NotIn",
-                                "rightOperand": "AGA_GL,PGA_GL"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "ProductVersion",
-                                "operator": "GreaterThanEqual",
-                                "rightOperand": "4.80.0.0"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "ProductVersion",
-                                "operator": "LessThan",
-                                "rightOperand": "4.300.0"
-                            }
-                        ]
-                    },
-                    {
-                        "expressions": [
-                            {
-                                "contextJson": "",
-                                "leftOperand": "Oem",
-                                "operator": "In",
-                                "rightOperand": "bgp"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "GlMode",
-                                "operator": "NotIn",
-                                "rightOperand": "AGA_GL,PGA_GL"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "ImageName",
-                                "operator": "In",
-                                "rightOperand": "Nougat32"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "ProductVersion",
-                                "operator": "GreaterThan",
-                                "rightOperand": "4.300.0"
-                            }
-                        ]
-                    },
-                    {
-                        "expressions": [
-                            {
-                                "contextJson": "",
-                                "leftOperand": "Oem",
-                                "operator": "In",
-                                "rightOperand": "nxt"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "GlMode",
-                                "operator": "NotIn",
-                                "rightOperand": "AGA_GL,PGA_GL"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "ImageName",
-                                "operator": "In",
-                                "rightOperand": "Nougat32"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "ProductVersion",
-                                "operator": "GreaterThan",
-                                "rightOperand": "5.0.0"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ],
-        "pkgName": "com.foxnextgames.avatar"
-    },
-    {
-        "RuleSets": [
-            {
-                "description": "com.redsahara.terahero_aga_gl",
-                "messageWindow": {
-                    "buttons": [
-                        {
-                            "actions": [
-                                {
-                               
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Cabañas</title>
+		<meta name="keywords" content="Turismo, Bosque, montañas, información">
+		<meta name="description" content="En nuestras instalaciones, podrás divertirte haciendo diferentes actividades al aire libre, 
+		así como disfrutar de nuestros cabañas con todas la necesidades para que disfrutes tu estancia."/>
+        <meta charset=utf-8>
+        <meta name=viewport content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="/sass/style2.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <section class="main">
+			<header class="header"> 
+				<a href="index.html"><img src="img/logo2.png" class="logo"></a>
+			</header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+                <div class="container">
+                  <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="navbar-collapse collapse text-center menu" id="navbarsExample07">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="reglas.html">Reglas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mapa.html">¿Donde estamos?</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav> 
+			<div class="bg-light formulario">
+				<h1>Cabañas Mexiquillo</h1>
+				<h2>Información</h2>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+					Saepe iusto molestias dolore nobis repellendus fugit, fuga explicabo iure officiis 
+					cum quidem voluptas corporis sint, molestiae vero natus id dignissimos. Maxime.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur reiciendis 
+					facilis odit expedita amet explicabo. 
+					Quaerat velit nesciunt nulla quod, modi accusamus quidem corrupti omnis eos nihil voluptas fuga quis?
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+					Saepe iusto molestias dolore nobis repellendus fugit, fuga explicabo iure officiis 
+					cum quidem voluptas corporis sint, molestiae vero natus id dignissimos. Maxime.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur reiciendis 
+					facilis odit expedita amet explicabo. 
+					Quaerat velit nesciunt nulla quod, modi accusamus quidem corrupti omnis eos nihil voluptas fuga quis?
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+					Saepe iusto molestias dolore nobis repellendus fugit, fuga explicabo iure officiis 
+					cum quidem voluptas corporis sint, molestiae vero natus id dignissimos. Maxime.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur reiciendis 
+					facilis odit expedita amet explicabo. 
+					Quaerat velit nesciunt nulla quod, modi accusamus quidem corrupti omnis eos nihil voluptas fuga quis?
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+					Saepe iusto molestias dolore nobis repellendus fugit, fuga explicabo iure officiis 
+					cum quidem voluptas corporis sint, molestiae vero natus id dignissimos. Maxime.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur reiciendis 
+					facilis odit expedita amet explicabo. 
+					Quaerat velit nesciunt nulla quod, modi accusamus quidem corrupti omnis eos nihil voluptas fuga quis?
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+					Saepe iusto molestias dolore nobis repellendus fugit, fuga explicabo iure officiis 
+					cum quidem voluptas corporis sint, molestiae vero natus id dignissimos. Maxime.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur reiciendis 
+					facilis odit expedita amet explicabo. 
+					Quaerat velit nesciunt nulla quod, modi accusamus quidem corrupti omnis eos nihil voluptas fuga quis?
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+					Saepe iusto molestias dolore nobis repellendus fugit, fuga explicabo iure officiis 
+					cum quidem voluptas corporis sint, molestiae vero natus id dignissimos. Maxime.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur reiciendis 
+					facilis odit expedita amet explicabo. 
+					Quaerat velit nesciunt nulla quod, modi accusamus quidem corrupti omnis eos nihil voluptas fuga quis?
+				</p>
+				<img src="img/info1.jpg" class="info__imag">
+			</div>  
+			<footer class="bg-light">
+                <div class="text-center p-3">
+                      © 2021 Copyright
+                </div>
+            </footer>
+		</section>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	</body>
+</html>

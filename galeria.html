@@ -1,109 +1,75 @@
-"ContinueAnyway"
-                                }
-                            ],
-                            "buttonColor": "White",
-                            "buttonStringKey": "Not_Now_Button"
-                        }
-                    ],
-                    "dontShowOption": true,
-                    "headerStringKey": "PGA_GL_New_Header",
-                    "messageStringKey": "Graphic_Issue_PGA_GL_New_Message",
-                    "messageType": "Info"
-                },
-                "ruleId": "kmevumy5",
-                "rules": [
-                    {
-                        "expressions": [
-                            {
-                                "contextJson": "",
-                                "leftOperand": "Oem",
-                                "operator": "In",
-                                "rightOperand": "bgp"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "ProductVersion",
-                                "operator": "GreaterThanEqual",
-                                "rightOperand": "4.80.0"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "GlMode",
-                                "operator": "In",
-                                "rightOperand": "AGA_DX"
-                            }
-                        ]
-                    },
-                    {
-                        "expressions": [
-                            {
-                                "contextJson": "",
-                                "leftOperand": "Oem",
-                                "operator": "In",
-                                "rightOperand": "nxt"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "ProductVersion",
-                                "operator": "GreaterThanEqual",
-                                "rightOperand": "5.0.0"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "GlMode",
-                                "operator": "In",
-                                "rightOperand": "AGA_DX"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "ImageName",
-                                "operator": "In",
-                                "rightOperand": "Nougat32"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ],
-        "pkgName": "jp.co.yoozoo.sgsgy"
-    },
-    {
-        "RuleSets": [
-            {
-                "description": "com.tmtq.vn_PGA_GL",
-                "grmEvaluation": "0",
-                "messageWindow": {
-                    "buttons": [
-                        {
-                            "actions": [
-                                {
-                                    "actionDictionary": {
-                                        "actionValue": "PGA_GL"
-                                    },
-                                    "actionType": "GlMode"
-                                }
-                            ],
-                            "buttonColor": "Blue",
-                            "buttonStringKey": "Swtich_&_Restart_Button"
-                        }
-                    ],
-                    "dontShowOption": false,
-                    "headerStringKey": "PGA_GL_Header",
-                    "messageStringKey": "Graphic_Issue_PGA_GL_New_Message",
-                    "messageType": "Error"
-                },
-                "ruleId": "kmfupihc",
-                "rules": [
-                    {
-                        "expressions": [
-                            {
-                                "contextJson": "",
-                                "leftOperand": "Oem",
-                                "operator": "In",
-                                "rightOperand": "bgp"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "ProductVersion",
-                                "operator": "GreaterThanEqual",
-                                "rightO
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Cabañas-Galeria</title>
+        <meta name="keywords" content="Turismo, Bosque, montañas, galeria">
+		<meta name="description" content="Vea imágenes de nuestras instalaciones y cabañas, esto le ayudara a tomar una mejor decisión del tipo de cabaña que desea rentar."/>
+        <meta charset=utf-8>
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="sass/style2.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <section class="main">
+			<header class="header"> 
+				<a href="index.html"><img src="img/logo2.png" class="logo"></a>
+			</header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+                <div class="container">
+                  <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="navbar-collapse collapse text-center menu" id="navbarsExample07">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="reglas.html">Reglas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mapa.html">¿Donde estamos?</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>    
+            <section class="bg-light formulario carruselTamano">
+                <h1>Galeria de imagenes</h1>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/caba1.jpg" class="d-block w-100 tamanoImagenes" alt="caba1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/caba2.jpg" class="d-block w-100 tamanoImagenes" alt="caba2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/caba3.jpg" class="d-block w-100 tamanoImagenes" alt="caba3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <footer class="bg-light">
+                <div class="text-center p-3">
+                      © 2021 Copyright
+                </div>
+            </footer>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	</body>
+</html>

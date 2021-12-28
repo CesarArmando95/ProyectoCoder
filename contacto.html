@@ -1,175 +1,110 @@
-": "4.300.0"
-                            }
-                        ]
-                    },
-                    {
-                        "expressions": [
-                            {
-                                "contextJson": "",
-                                "leftOperand": "Oem",
-                                "operator": "In",
-                                "rightOperand": "bgp"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "DeviceProfile",
-                                "operator": "NotIn",
-                                "rightOperand": "snpe"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "ImageName",
-                                "operator": "In",
-                                "rightOperand": "Nougat32"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "ProductVersion",
-                                "operator": "GreaterThan",
-                                "rightOperand": "4.300.0"
-                            }
-                        ]
-                    },
-                    {
-                        "expressions": [
-                            {
-                                "contextJson": "",
-                                "leftOperand": "Oem",
-                                "operator": "In",
-                                "rightOperand": "nxt"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "DeviceProfile",
-                                "operator": "NotIn",
-                                "rightOperand": "snpe"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "ImageName",
-                                "operator": "In",
-                                "rightOperand": "Nougat32"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "ProductVersion",
-                                "operator": "GreaterThan",
-                                "rightOperand": "5.0.0"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ],
-        "pkgName": "com.mobile.legends"
-    },
-    {
-        "RuleSets": [
-            {
-                "description": "com.YoStarEN.Arknights_LatestVersion",
-                "messageWindow": {
-                    "buttons": [
-                        {
-                            "actions": [
-                                {
-                                    "actionDictionary": {
-                                        "click_action_value": "https://www.bluestacks.com/apps/strategy/arknights-on-pc.html",
-                                        "click_generic_action": "UserBrowser"
-                                    },
-                                    "actionType": "UserBrowser"
-                                }
-                            ],
-                            "buttonColor": "Blue",
-                            "buttonStringKey": "Know_more_Button"
-                        }
-                    ],
-                    "dontShowOption": false,
-                    "headerStringKey": "Latest _Version_New_Header",
-                    "messageStringKey": "BS4_Message",
-                    "messageType": "Error"
-                },
-                "ruleId": "keoapuna",
-                "rules": [
-                    {
-                        "expressions": [
-                            {
-                                "contextJson": "",
-                                "leftOperand": "ProductVersion",
-                                "operator": "GreaterThanEqual",
-                                "rightOperand": "4.200.0"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "Oem",
-                                "operator": "In",
-                                "rightOperand": "bgp64"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "ABIMode",
-                                "operator": "In",
-                                "rightOperand": "ARM"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "ProductVersion",
-                                "operator": "LessThan",
-                                "rightOperand": "4.240.30"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ],
-        "pkgName": "com.YoStarEN.Arknights"
-    },
-    {
-        "RuleSets": [
-            {
-                "description": "com.herogame.gplay.punishing.grayraven.tw_PGA_GL",
-                "messageWindow": {
-                    "buttons": [
-                        {
-                            "actions": [
-                                {
-                                    "actionDictionary": {
-                                        "actionValue": "PGA_GL"
-                                    },
-                                    "actionType": "GlMode"
-                                }
-                            ],
-                            "buttonColor": "Blue",
-                            "buttonStringKey": "Swtich_&_Restart_Button"
-                        }
-                    ],
-                    "dontShowOption": false,
-                    "headerStringKey": "PGA_GL_New_Header",
-                    "messageStringKey": "Graphic_Issue_PGA_GL_New_Message",
-                    "messageType": "Error"
-                },
-                "ruleId": "kee670rp",
-                "rules": [
-                    {
-                        "expressions": [
-                            {
-                                "contextJson": "",
-                                "leftOperand": "ProductVersion",
-                                "operator": "GreaterThanEqual",
-                                "rightOperand": "4.80.0"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "Oem",
-                                "operator": "In",
-                                "rightOperand": "bgp"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "GlMode",
-                                "operator": "In",
-                                "rightOperand": "AGA_DX"
-                            },
-                            {
-                                "contextJson": "",
-                                "leftOperand": "ProductVersion",
-          
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cabañas-Registro</title>
+        <meta name="keywords" content="Turismo, Bosque, montañas, contacto">
+		<meta name="description" content="Si desea hacer una reservación, escriba sus datos personales y el tipo de cabaña que desea rentar."/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="sass/style2.css" rel="stylesheet" type="text/css">
+    </head>
+    </head>
+    <body>
+        <section class="main">
+            <header class="header"> 
+                <a href="index.html"><img src="img/logo2.png" class="logo"></a>
+            </header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+                <div class="container">
+                  <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="navbar-collapse collapse text-center menu" id="navbarsExample07">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="reglas.html">Reglas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mapa.html">¿Donde estamos?</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <section class="bg-light formulario">
+                <h1>Formulario de registro</h1>
+                <form>
+                    <div>
+                      <label for="Nombre" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" name="nombre" placeholder="escribe tu nombre">
+                    </div>
+                    <div class="mb-3">
+                      <label for="Apellido" class="form-label">Apellido</label>
+                      <input type="text" class="form-control" name="apellido" placeholder="escribe tu apellido">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Direccion" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" name="direccion" placeholder="escribe tu dirección">
+                    </div>
+                    <div class="mb-3 formulario--datos">
+                        <label for="Tamano" class="form-label">Tamaño de la cabaña</label>
+                        <select name="registro datos">
+                            <option value="L">Chica</option>
+                            <option value="M">Mediana</option>
+                            <option value="S">Grande</option>
+                        </select>
+                    </div>
+                    <div class="formulario--datos">  
+                        <label for="Internet" class="form-label">¿Deseas tener internet en tu cabaña?</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Sin internet </label>
+                        </div>
+                        <div class="mb-3 form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Con internet</label>
+                        </div>
+                    </div> 
+                    <div>
+                        <h2>Terminos y condiciones</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, modi? Dolores harum repudiandae illo 
+                            quidem, nihil accusamus, officiis magnam numquam, unde laborum beatae! Atque, rem id hic placeat ut quibusdam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quia illo iste atque animi reprehenderit 
+                            non quas modi hic quo eos quod, velit a necessitatibus accusantium dolorem alias amet dolorum!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores deleniti itaque veniam nesciunt iste, 
+                            qui error omnis voluptatibus fugit perferendis! Dicta, cum vitae autem corporis recusandae eum magni voluptates voluptatibus!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quod aspernatur expedita tempora sapiente libero neque fugiat 
+                            debitis sed maxime id officiis officia est possimus, a at vero temporibus deserunt?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusantium, eligendi aperiam iusto debitis non voluptatibus, 
+                            odit voluptas optio veritatis tempora magni deleniti ipsum modi voluptate a eaque minima. Molestiae?
+                        </p>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Acepta términos y condiciones</label>
+                    </div>
+                    <div class="formulario--datos">
+                        <button type="submit" class="m-2 btn btn-primary">Enviar</button>
+                        <button type="reset" class="m-2 btn btn-primary">Limpiar formulario</button> 
+                    </div>    
+                </form>
+            </section>    
+            <footer class="bg-light">
+                <div class="text-center p-3">
+                      © 2021 Copyright
+                </div>
+            </footer>    
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
