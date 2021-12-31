@@ -1,0 +1,40 @@
+@mixin sobrePoner($fondo: black, $escala: 1){
+    background-color: $fondo;
+    transform: scale($escala, $escala);
+}
+.main {
+    margin: 20px;
+    width: 98%;
+    height: 98%;
+    header{     
+        margin-bottom: 10px;
+        .logo{
+            width: 200px;
+        }
+    }
+    nav {
+        display: flex;
+        padding: 15px;
+        li{
+            &:hover{
+                @include sobrePoner;
+                @media all and (min-width: 980px){
+                    @include sobrePoner($fondo: green, $escala: 1.45);
+                }
+            }
+        }
+    }
+    .formulario {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 1em;
+        
+        &--datos{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    footer{
+        margin-top: 1em;
+    }                     
+}

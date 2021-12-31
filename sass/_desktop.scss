@@ -1,0 +1,40 @@
+$marginSize: (
+    'uno': 1em,
+    'poco': 3em,
+    'medio': 5em,
+    'mucho': 8em,
+    'CarruXL': 15em
+);
+@media all and (min-width: 980px){
+    body{
+        font-size: 130%;
+    }
+    .main header {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .main nav {
+        margin-left: map-get($marginSize, medio);
+        margin-right: map-get($marginSize, medio);
+    }
+    .main .formulario{
+        margin-left: map-get($marginSize, mucho);
+        margin-right: map-get($marginSize, mucho);
+        padding: map-get($marginSize, uno) map-get($marginSize, poco);
+    }
+    .main footer{
+        margin-left: map-get($marginSize, medio);
+        margin-right: map-get($marginSize, medio);
+    }
+    .main .formulario--datos{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .tamanoImagenes{
+        width: 33%;
+    }
+    .main .carruselTamano{
+        margin-left: map-get($marginSize, CarruXL);
+        margin-right: map-get($marginSize, CarruXL);
+    }
+}
