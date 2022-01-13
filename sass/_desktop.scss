@@ -5,7 +5,7 @@ $marginSize: (
     'mucho': 8em,
     'CarruXL': 15em
 );
-@media all and (min-width: 980px){
+@media all and (min-width: 1279px){
     body{
         font-size: 130%;
     }
@@ -14,6 +14,7 @@ $marginSize: (
         margin-right: 100px;
     }
     .main nav {
+        flex-direction: row;
         margin-left: map-get($marginSize, medio);
         margin-right: map-get($marginSize, medio);
     }

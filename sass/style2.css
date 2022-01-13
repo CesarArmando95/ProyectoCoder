@@ -17,15 +17,15 @@ body {
   width: 98%;
   height: 98%;
 }
-.main header {
-  margin-bottom: 10px;
-}
-.main header .logo {
-  width: 200px;
+.main .logo {
+  width: 300px;
 }
 .main nav {
   display: flex;
-  padding: 15px;
+  flex-direction: column;
+}
+.main nav li {
+  padding-inline: 1em;
 }
 .main nav li:hover {
   background-color: black;
@@ -34,7 +34,7 @@ body {
 @media all and (min-width: 980px) {
   .main nav li:hover {
     background-color: green;
-    transform: scale(1.45, 1.45);
+    transform: scale(1.1, 1.1);
   }
 }
 .main .formulario {
@@ -76,7 +76,7 @@ body {
 
 .tamanoImagenes {
   width: 100%;
-  height: 600px;
+  height: 500px;
   margin: 0px;
   padding: 10px;
 }
@@ -100,7 +100,7 @@ body {
   color: red;
 }
 
-@media all and (min-width: 980px) {
+@media all and (min-width: 1279px) {
   body {
     font-size: 130%;
   }
@@ -111,6 +111,7 @@ body {
   }
 
   .main nav {
+    flex-direction: row;
     margin-left: 5em;
     margin-right: 5em;
   }

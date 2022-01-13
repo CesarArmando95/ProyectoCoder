@@ -10,35 +10,33 @@
     </head>
     <body>
         <div class="main">
-            <header class="header"> 
-                <a href="index.html"><img src="img/logo2.png" class="logo"></a>
-            </header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a href="index.html"><img src="img/logo.png" class="logo"></a>
                 <div class="container">
                   <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
+                  </button>                  
                     <div class="navbar-collapse collapse text-center menu" id="navbarsExample07">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
+                        <ul class="navbar-nav">
+                            <li>
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
-                            <li class="nav-item">
+                            <li>
                                 <a class="nav-link" href="reglas.html">Reglas</a>
                             </li>
-                            <li class="nav-item">
+                            <li>
                                 <a class="nav-link" href="galeria.html">Galeria</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            <li>
+                                <a class="nav-link" href="contacto.html">Registro</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="mapa.html">¿Donde estamos?</a>
+                            <li>
+                                <a class="nav-link" href="mapa.html">¿En donde se llevara acabo?</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </nav>
+            </nav>  
             <section class="bg-light formulario">
                 <h1>Formulario de registro</h1>
                 <form>
@@ -51,26 +49,30 @@
                       <input type="text" class="form-control" name="apellido" placeholder="escribe tu apellido">
                     </div>
                     <div class="mb-3">
-                        <label for="Direccion" class="form-label">Dirección</label>
-                        <input type="text" class="form-control" name="direccion" placeholder="escribe tu dirección">
+                        <label for="Direccion" class="form-label">Nombre del club al que pertenece:</label>
+                        <input type="text" class="form-control" name="direccion" placeholder="Nombre del club">
                     </div>
                     <div class="mb-3 formulario--datos">
-                        <label for="Tamano" class="form-label">Tamaño de la cabaña</label>
+                        <label for="Tamano" class="form-label">Kit</label>
                         <select name="registro datos">
-                            <option value="L">Chica</option>
-                            <option value="M">Mediana</option>
-                            <option value="S">Grande</option>
+                            <option value="L">Solo pulsera</option>
+                            <option value="M">Solo jersey</option>
+                            <option value="S">Completo</option>
                         </select>
                     </div>
                     <div class="formulario--datos">  
-                        <label for="Internet" class="form-label">¿Deseas tener internet en tu cabaña?</label>
+                        <label for="Internet" class="form-label">Comidas</label>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1">
-                            <label class="form-check-label" for="inlineRadio1">Sin internet </label>
+                            <label class="form-check-label" for="inlineRadio1">Primer dia:</label>
                         </div>
                         <div class="mb-3 form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option2">
-                            <label class="form-check-label" for="inlineRadio2">Con internet</label>
+                            <label class="form-check-label" for="inlineRadio2">Segundo dia: </label>
+                        </div>
+                        <div class="mb-3 form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option3">
+                            <label class="form-check-label" for="inlineRadio2">Tercer dia: </label>
                         </div>
                     </div> 
                     <div>
