@@ -30,9 +30,6 @@ $marginSize: (
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .tamanoImagenes{
-        width: 33%;
-    }
     .main .carruselTamano{
         margin-left: map-get($marginSize, CarruXL);
         margin-right: map-get($marginSize, CarruXL);
