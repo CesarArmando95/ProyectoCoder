@@ -10,4 +10,10 @@ body{
     background-size: cover;
     font-family: 'Mulish', sans-serif;
     font-size: 150%;
+    @include respond(mediano){
+        font-size: $letraM;
+    }
+    @include respond(grande){
+        font-size: $letraG;
+    }
 }

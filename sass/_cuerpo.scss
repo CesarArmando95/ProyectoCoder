@@ -8,6 +8,9 @@
     height: 98%;     
     .logo{
         width: 300px;
+        @include respond(mediano){
+            width: 225px;
+        }
     }    
     nav {
         display: flex;
@@ -21,6 +24,15 @@
                 }
             }
         }
+        @include respond(mediano){
+            flex-direction: row;
+            margin-left: map-get($marginSize, poco);
+            margin-right: map-get($marginSize, poco);
+        }
+        @include respond(grande){
+            margin-left: map-get($marginSize, medio);
+            margin-right: map-get($marginSize, medio);
+        }
     }
     .formulario {
         margin-bottom: 10px;
@@ -30,6 +42,19 @@
         &--datos{
             display: flex;
             flex-direction: column;
+            @include respond(mediano){
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+        @include respond(mediano){
+            margin-left: map-get($marginSize, medio);
+            margin-right: map-get($marginSize, medio);
+            padding: map-get($marginSize, uno) map-get($marginSize, poco);
+        }
+        @include respond(grande){
+            margin-left: map-get($marginSize, mucho);
+            margin-right: map-get($marginSize, mucho);
         }
     }
     footer{
