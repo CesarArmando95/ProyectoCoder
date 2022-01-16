@@ -47,6 +47,16 @@
                 flex-wrap: wrap;
             }
         }
+        &--carrusel{
+            @include respond(mediano){
+                margin-left: map-get($marginSize, CarruL);
+                margin-right: map-get($marginSize, CarruL);
+            }
+            @include respond(grande){
+                margin-left: map-get($marginSize, CarruXL);
+                margin-right: map-get($marginSize, CarruXL);
+            }
+        }
         @include respond(mediano){
             margin-left: map-get($marginSize, medio);
             margin-right: map-get($marginSize, medio);

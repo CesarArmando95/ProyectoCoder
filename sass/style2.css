@@ -11,7 +11,7 @@ body {
   font-family: "Mulish", sans-serif;
   font-size: 150%;
 }
-@media all and (min-width: 1081px) {
+@media all and (min-width: 811px) {
   body {
     font-size: 140%;
   }
@@ -30,7 +30,7 @@ body {
 .main .logo {
   width: 300px;
 }
-@media all and (min-width: 1081px) {
+@media all and (min-width: 811px) {
   .main .logo {
     width: 225px;
   }
@@ -52,7 +52,7 @@ body {
     transform: scale(1.1, 1.1);
   }
 }
-@media all and (min-width: 1081px) {
+@media all and (min-width: 811px) {
   .main nav {
     flex-direction: row;
     margin-left: 3em;
@@ -74,13 +74,25 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media all and (min-width: 1081px) {
+@media all and (min-width: 811px) {
   .main .formulario--datos {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
-@media all and (min-width: 1081px) {
+@media all and (min-width: 811px) {
+  .main .formulario--carrusel {
+    margin-left: 11em;
+    margin-right: 11em;
+  }
+}
+@media all and (min-width: 1368px) {
+  .main .formulario--carrusel {
+    margin-left: 25em;
+    margin-right: 25em;
+  }
+}
+@media all and (min-width: 811px) {
   .main .formulario {
     margin-left: 5em;
     margin-right: 5em;
@@ -138,7 +150,35 @@ body {
 
 .titulo, .cuidado {
   text-align: center;
+  font-weight: bold;
+}
+
+.letraXLL {
+  font-size: 200%;
+}
+
+.letraXL {
+  font-size: 150%;
+}
+
+.letraL {
+  font-size: 125%;
+}
+
+.letraM {
   font-size: 100%;
+}
+
+.letraS {
+  font-size: 70%;
+}
+
+.letraXS {
+  font-size: 50%;
+}
+
+.letraXSS {
+  font-size: 30%;
 }
 
 .cuidado {

@@ -3,8 +3,13 @@ $marginSize: (
     'poco': 3em,
     'medio': 5em,
     'mucho': 8em,
-    'CarruXL': 15em
+    'CarruL': 11em,
+    'CarruXL': 25em
 );
 
 $letraG: 130%;
 $letraM: 140%;
+
+$NombreTamanoLetra: letraXLL, letraXL, letraL, letraM, letraS, letraXS, letraXSS;
+$TamanoLetra: 200%, 150%, 125%, 100%, 70%, 50%, 30%; 
+

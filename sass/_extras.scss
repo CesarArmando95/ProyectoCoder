@@ -19,8 +19,20 @@
 }
 .titulo{
     text-align: center;
-    font-size: 100%
+    font-weight: bold;
 }
+
+@mixin CreandoClases($n){
+    $p: nth($NombreTamanoLetra, $n);
+    .#{$p}{
+        font-size: nth($TamanoLetra, $n);
+    }
+}
+@for $n from 1 through 7{
+    @include CreandoClases($n);
+}
+
+
 .cuidado{
     @extend .titulo;
     font-size:28px;

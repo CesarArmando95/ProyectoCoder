@@ -7,7 +7,7 @@
     }
 
     @else if $breakpoint==mediano {
-        @media all and (min-width: 1081px) {
+        @media all and (min-width: 811px) {
             @content;
         }
     }
