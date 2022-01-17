@@ -55,14 +55,6 @@ body {
 @media all and (min-width: 811px) {
   .main nav {
     flex-direction: row;
-    margin-left: 3em;
-    margin-right: 3em;
-  }
-}
-@media all and (min-width: 1368px) {
-  .main nav {
-    margin-left: 5em;
-    margin-right: 5em;
   }
 }
 .main .formulario {
@@ -78,31 +70,6 @@ body {
   .main .formulario--datos {
     flex-direction: row;
     flex-wrap: wrap;
-  }
-}
-@media all and (min-width: 811px) {
-  .main .formulario--carrusel {
-    margin-left: 11em;
-    margin-right: 11em;
-  }
-}
-@media all and (min-width: 1368px) {
-  .main .formulario--carrusel {
-    margin-left: 25em;
-    margin-right: 25em;
-  }
-}
-@media all and (min-width: 811px) {
-  .main .formulario {
-    margin-left: 5em;
-    margin-right: 5em;
-    padding: 1em 3em;
-  }
-}
-@media all and (min-width: 1368px) {
-  .main .formulario {
-    margin-left: 8em;
-    margin-right: 8em;
   }
 }
 .main footer {

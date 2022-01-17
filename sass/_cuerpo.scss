@@ -26,12 +26,6 @@
         }
         @include respond(mediano){
             flex-direction: row;
-            margin-left: map-get($marginSize, poco);
-            margin-right: map-get($marginSize, poco);
-        }
-        @include respond(grande){
-            margin-left: map-get($marginSize, medio);
-            margin-right: map-get($marginSize, medio);
         }
     }
     .formulario {
@@ -46,25 +40,6 @@
                 flex-direction: row;
                 flex-wrap: wrap;
             }
-        }
-        &--carrusel{
-            @include respond(mediano){
-                margin-left: map-get($marginSize, CarruL);
-                margin-right: map-get($marginSize, CarruL);
-            }
-            @include respond(grande){
-                margin-left: map-get($marginSize, CarruXL);
-                margin-right: map-get($marginSize, CarruXL);
-            }
-        }
-        @include respond(mediano){
-            margin-left: map-get($marginSize, medio);
-            margin-right: map-get($marginSize, medio);
-            padding: map-get($marginSize, uno) map-get($marginSize, poco);
-        }
-        @include respond(grande){
-            margin-left: map-get($marginSize, mucho);
-            margin-right: map-get($marginSize, mucho);
         }
     }
     footer{
