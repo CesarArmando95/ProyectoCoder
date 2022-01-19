@@ -8,6 +8,7 @@
     height: 98%;     
     .logo{
         width: 300px;
+        padding: 1em;
         @include respond(mediano){
             width: 225px;
         }
@@ -41,8 +42,23 @@
                 flex-wrap: wrap;
             }
         }
+
+        .separa{
+            margin-left: 1em;
+        }
     }
     footer{
         margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .iconos{
+            margin: 1em;
+            width: 50px;
+        }
+        @include respond(mediano){
+            flex-direction: row;
+        }
     }                     
 }

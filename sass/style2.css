@@ -29,6 +29,7 @@ body {
 }
 .main .logo {
   width: 300px;
+  padding: 1em;
 }
 @media all and (min-width: 811px) {
   .main .logo {
@@ -72,8 +73,24 @@ body {
     flex-wrap: wrap;
   }
 }
+.main .formulario .separa {
+  margin-left: 1em;
+}
 .main footer {
   margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main footer .iconos {
+  margin: 1em;
+  width: 50px;
+}
+@media all and (min-width: 811px) {
+  .main footer {
+    flex-direction: row;
+  }
 }
 
 .parpadea, .cuidado {
