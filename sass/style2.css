@@ -6,24 +6,18 @@
 
 body {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../img/fondo2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url("../img/fondoF.jpg");
   background-size: cover;
   font-family: "Mulish", sans-serif;
   font-size: 150%;
 }
 @media all and (min-width: 811px) {
   body {
-    font-size: 140%;
-  }
-}
-@media all and (min-width: 1368px) {
-  body {
     font-size: 130%;
   }
 }
 
 .main {
-  margin: 20px;
   width: 98%;
   height: 98%;
 }
@@ -45,12 +39,12 @@ body {
 }
 .main nav li:hover {
   background-color: black;
-  transform: scale(1, 1);
+  transform: scale(1.1);
 }
-@media all and (min-width: 980px) {
+@media all and (min-width: 811px) {
   .main nav li:hover {
     background-color: green;
-    transform: scale(1.1, 1.1);
+    transform: scale(1.15);
   }
 }
 @media all and (min-width: 811px) {
@@ -74,7 +68,7 @@ body {
   }
 }
 .main .formulario .separa {
-  margin-left: 1em;
+  margin-right: 1em;
 }
 .main footer {
   margin-top: 1em;
@@ -84,12 +78,17 @@ body {
   align-items: center;
 }
 .main footer .iconos {
-  margin: 1em;
-  width: 50px;
+  margin: 0.5em;
+  width: 40px;
 }
 @media all and (min-width: 811px) {
   .main footer {
     flex-direction: row;
+  }
+}
+@media all and (min-width: 811px) {
+  .main {
+    margin: 1em;
   }
 }
 
@@ -111,32 +110,6 @@ body {
     opacity: 1;
   }
 }
-.info__imag {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-.tamanoImagenes {
-  width: 100%;
-  height: 500px;
-  margin: 0px;
-  padding: 10px;
-}
-
-.reglas {
-  padding-left: 30px;
-}
-.reglas .separacion {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.titulo, .cuidado {
-  text-align: center;
-  font-weight: bold;
-}
-
 .letraXLL {
   font-size: 200%;
 }
@@ -163,6 +136,36 @@ body {
 
 .letraXSS {
   font-size: 30%;
+}
+
+.tamanoImagenes {
+  width: 100%;
+  height: 500px;
+  margin: 0px;
+  padding: 10px;
+}
+
+.reglas {
+  padding-left: 4em;
+}
+.reglas .separacion {
+  padding-bottom: 1.5em;
+}
+
+.titulo, .cuidado {
+  text-align: center;
+  font-weight: bold;
+}
+
+.infoImg {
+  max-width: 100%;
+  max-height: 100%;
+}
+@media all and (min-width: 811px) {
+  .infoImg {
+    max-width: 50%;
+    max-height: 50%;
+  }
 }
 
 .cuidado {

@@ -1,15 +1,10 @@
-@mixin sobrePoner($fondo: black, $escala: 1){
-    background-color: $fondo;
-    transform: scale($escala, $escala);
-}
 .main {
-    margin: 20px;
     width: 98%;
     height: 98%;     
     .logo{
         width: 300px;
         padding: 1em;
-        @include respond(mediano){
+        @include respond{
             width: 225px;
         }
     }    
@@ -19,13 +14,15 @@
         li{
             padding-inline: 1em;
             &:hover{
-                @include sobrePoner;
-                @media all and (min-width: 980px){
-                    @include sobrePoner($fondo: green, $escala: 1.10);
+                background-color:black; 
+                transform: scale(1.10);
+                @include respond{
+                    background-color:green; 
+                    transform: scale(1.15);
                 }
             }
         }
-        @include respond(mediano){
+        @include respond{
             flex-direction: row;
         }
     }
@@ -37,14 +34,14 @@
         &--datos{
             display: flex;
             flex-direction: column;
-            @include respond(mediano){
+            @include respond{
                 flex-direction: row;
                 flex-wrap: wrap;
             }
         }
 
         .separa{
-            margin-left: 1em;
+            margin-right: 1em;
         }
     }
     footer{
@@ -54,11 +51,14 @@
         justify-content: space-between;
         align-items: center;
         .iconos{
-            margin: 1em;
-            width: 50px;
+            margin: 0.5em;
+            width: 40px;
         }
-        @include respond(mediano){
+        @include respond{
             flex-direction: row;
         }
-    }                     
+    } 
+    @include respond{
+        margin: 1em;
+    }                    
 }

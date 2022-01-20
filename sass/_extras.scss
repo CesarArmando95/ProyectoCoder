@@ -1,26 +1,4 @@
 @use 'anima';
-.info__imag{
-    margin-left: auto; 
-    margin-right: auto;
-    display: block;
-}
-.tamanoImagenes{
-    width: 100%;
-    height: 500px; 
-    margin: 0px;
-    padding: 10px;
-}
-.reglas{
-    padding-left: 30px;
-    .separacion{
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-}
-.titulo{
-    text-align: center;
-    font-weight: bold;
-}
 
 @mixin CreandoClases($n){
     $p: nth($NombreTamanoLetra, $n);
@@ -32,6 +10,31 @@
     @include CreandoClases($n);
 }
 
+.tamanoImagenes{
+    width: 100%;
+    height: 500px; 
+    margin: 0px;
+    padding: 10px;
+}
+.reglas{
+    padding-left: 4em;
+    .separacion{
+        padding-bottom: 1.5em;
+    }
+}
+.titulo{
+    text-align: center;
+    font-weight: bold;
+}
+
+.infoImg{
+    max-width: 100%;
+    max-height: 100%;
+    @include respond{
+        max-width: 50%;
+        max-height: 50%;
+    }
+}
 
 .cuidado{
     @extend .titulo;
