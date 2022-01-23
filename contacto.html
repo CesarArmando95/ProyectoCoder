@@ -10,36 +10,34 @@
     </head>
     <body>
         <div class="main">
-            <header class="header"> 
-                <a href="index.html"><img src="img/logo2.png" class="logo"></a>
-            </header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-xl-10 col-lg-11 mx-auto">
+                <a href="index.html"><img src="img/logo.png" class="logo" alt="logo"></a>
                 <div class="container">
                   <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
+                  </button>                  
                     <div class="navbar-collapse collapse text-center menu" id="navbarsExample07">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
+                        <ul class="navbar-nav">
+                            <li>
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
-                            <li class="nav-item">
+                            <li>
                                 <a class="nav-link" href="reglas.html">Reglas</a>
                             </li>
-                            <li class="nav-item">
+                            <li>
                                 <a class="nav-link" href="galeria.html">Galeria</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            <li>
+                                <a class="nav-link" href="contacto.html">Registro</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="mapa.html">¿Donde estamos?</a>
+                            <li>
+                                <a class="nav-link" href="mapa.html">¿En donde se llevara acabo?</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </nav>
-            <section class="bg-light formulario">
+            </nav>  
+            <section class="bg-light formulario col-xl-10 col-lg-11 mx-auto">
                 <h1>Formulario de registro</h1>
                 <form>
                     <div>
@@ -51,41 +49,38 @@
                       <input type="text" class="form-control" name="apellido" placeholder="escribe tu apellido">
                     </div>
                     <div class="mb-3">
-                        <label for="Direccion" class="form-label">Dirección</label>
-                        <input type="text" class="form-control" name="direccion" placeholder="escribe tu dirección">
+                        <label for="Direccion" class="form-label">Nombre del club al que pertenece:</label>
+                        <input type="text" class="form-control" name="direccion" placeholder="Nombre del club">
                     </div>
                     <div class="mb-3 formulario--datos">
-                        <label for="Tamano" class="form-label">Tamaño de la cabaña</label>
+                        <label for="Tamano" class="form-label letraL separa">Kit</label>
                         <select name="registro datos">
-                            <option value="L">Chica</option>
-                            <option value="M">Mediana</option>
-                            <option value="S">Grande</option>
+                            <option value="L">Solo pulsera</option>
+                            <option value="M">Solo jersey</option>
+                            <option value="S">Completo</option>
                         </select>
                     </div>
-                    <div class="formulario--datos">  
-                        <label for="Internet" class="form-label">¿Deseas tener internet en tu cabaña?</label>
+                    <div class="formulario--datos letraL">  
+                        <label for="Internet" class="form-label separa">Comidas: </label>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1">
-                            <label class="form-check-label" for="inlineRadio1">Sin internet </label>
+                            <label class="form-check-label" for="inlineRadio1">Solo Comidas</label>
                         </div>
                         <div class="mb-3 form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option2">
-                            <label class="form-check-label" for="inlineRadio2">Con internet</label>
+                            <label class="form-check-label" for="inlineRadio2">Solo desayunos</label>
+                        </div>
+                        <div class="mb-3 form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option3">
+                            <label class="form-check-label" for="inlineRadio2">Todas</label>
                         </div>
                     </div> 
                     <div>
                         <h2>Terminos y condiciones</h2>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, modi? Dolores harum repudiandae illo 
-                            quidem, nihil accusamus, officiis magnam numquam, unde laborum beatae! Atque, rem id hic placeat ut quibusdam.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quia illo iste atque animi reprehenderit 
-                            non quas modi hic quo eos quod, velit a necessitatibus accusantium dolorem alias amet dolorum!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores deleniti itaque veniam nesciunt iste, 
-                            qui error omnis voluptatibus fugit perferendis! Dicta, cum vitae autem corporis recusandae eum magni voluptates voluptatibus!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quod aspernatur expedita tempora sapiente libero neque fugiat 
-                            debitis sed maxime id officiis officia est possimus, a at vero temporibus deserunt?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusantium, eligendi aperiam iusto debitis non voluptatibus, 
-                            odit voluptas optio veritatis tempora magni deleniti ipsum modi voluptate a eaque minima. Molestiae?
+                            La empresa no se hace responsable en caso de proporcionar mal sus datos en el apartado de arriba, por lo que al momento de aceptar usted está 
+                            seguro de los datos que escribió.
+                            En caso de problemas o que los datos que no coincidan, consúltelo primero con el administrador de su grupo para que se comunique con nosotros.  
                         </p>
                     </div>
                     <div class="mb-3 form-check">
@@ -97,12 +92,58 @@
                         <button type="reset" class="m-2 btn btn-primary">Limpiar formulario</button> 
                     </div>    
                 </form>
-            </section>    
-            <footer class="bg-light">
-                <div class="text-center p-3">
-                      © 2021 Copyright
+            </section>
+            <section class="bg-secondary text-white formulario col-xl-10 col-lg-11 mx-auto">
+                <h2 class="letraXL">¿No tienes grupo? Registra un nuevo grupo (por lo menos de dos personas)</h2>
+                <form>
+                    <div>
+                      <label for="Nombre" class="form-label">Nombre del grupo: </label>
+                      <input type="text" class="form-control" name="nombre" placeholder="escribe el nombre del grupo">
+                    </div>
+                    <div class="mb-3">
+                      <label for="Apellido" class="form-label">Lugar de procedencia: </label>
+                      <input type="text" class="form-control" name="apellido" placeholder="¿de donde son?">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Direccion" class="form-label">Nombre del representate del grupo: </label>
+                        <input type="text" class="form-control" name="direccion" placeholder="escribe el nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Direccion" class="form-label">Numero de aproximado de instegrantes: </label>
+                        <input type="number" class="form-control" name="direccion" placeholder="escribe el numero">
+                    </div>
+                    <div>
+                        <h2>Terminos y condiciones</h2>
+                        <p>
+                            La empresa no se hace responsable en caso de proporcionar mal sus datos en el apartado de arriba, por lo que al momento de aceptar usted está 
+                            seguro de los datos que escribió.
+                            El grupo no debe tener un nombre ofensivo o muy vulgar, el tamaño mínimo del grupo es de dos personas, el número aproximado no tiene por qué ser el 
+                            tamaño final del grupo, este número nos sirve para tener un mejor control y orden, y puede ir cambiando en lo que más personas se registran.  
+                        </p>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Acepta términos y condiciones</label>
+                    </div>
+                    <div class="formulario--datos">
+                        <button type="submit" class="m-2 btn btn-primary">Enviar</button>
+                        <button type="reset" class="m-2 btn btn-primary">Limpiar formulario</button> 
+                    </div>    
+                </form>
+            </section>     
+            <footer class="bg-dark col-xl-10 col-lg-11 mx-auto">
+                <div>
+                    <a href="index.html"><img src="img/logo.png" class="logo" alt="logo"></a>
                 </div>
-            </footer>    
+                <div class="text-center text-white">
+                    Copyright © 2021 Mexiquillazo - Todos los derechos reservados.
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/Mexiquillazo/"><img src="img/facebook.svg" class="iconos" alt="facebook"></a>
+                    <a href="https://www.instagram.com/mxzo_official/"><img src="img/iinstagram.svg" class="iconos" alt="instagram"></a>
+                    <a href="https://www.youtube.com/channel/UC4fy3j4HSl31OlYzReTTy1g/featured"><img src="img/youtube.svg" class="iconos" alt="youtube"></a>
+                </div>
+            </footer>   
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
